@@ -7,5 +7,8 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "ponponuumi",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "vite": "^5.4.11"
+    }
 }
