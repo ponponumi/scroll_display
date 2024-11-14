@@ -31,6 +31,33 @@ class ScrollDisplay{
             });
         }
     }
+
+    public eventAddSimple(displayType: string, waitMillisecond: number = 1) {
+        // イベントを追加する
+        this.eventAdd(function (totop) {
+            // 上なら非表示
+            let totopStyle = window.getComputedStyle(totop);
+
+            if (totopStyle.getPropertyValue("opacity") === "1" && totopStyle.getPropertyValue("display") === displayType) {
+                totop.style.opacity = "0";
+
+                setTimeout(function(){
+                    totop.style.display = "none";
+                },waitMillisecond);
+            }
+        }, function (totop) {
+            // 下なら表示
+            let totopStyle = window.getComputedStyle(totop);
+
+            if(totopStyle.getPropertyValue("display") === "none"){
+                totop.style.display = displayType;
+
+                setTimeout(function(){
+                    totop.style.opacity = "1";
+                },1);
+            }
+        });
+    }
 }
 
 export default ScrollDisplay;
