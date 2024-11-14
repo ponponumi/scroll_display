@@ -9,3 +9,5 @@ class ScrollDisplay{
         }
     }
 }
+
+export default ScrollDisplay;
