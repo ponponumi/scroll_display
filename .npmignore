@@ -2,8 +2,9 @@ dist/
 nginx/
 node_modules/
 test/
-.editorconfig/
-npmignore/
+.editorconfig
+.gitignore
+.npmignore
 docker-compose.yml
 index.html
 package-lock.json
