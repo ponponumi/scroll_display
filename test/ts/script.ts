@@ -1,6 +1,7 @@
 import ScrollDisplay from "../../src/main";
 
 let ScrollDisplayObj = new ScrollDisplay("totop", 20);
+ScrollDisplayObj.eventAddSimple("flex", 501);
 
 let listElem = document.getElementById("list");
 
