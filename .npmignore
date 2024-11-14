@@ -1,0 +1,10 @@
+dist/
+nginx/
+node_modules/
+test/
+.editorconfig/
+npmignore/
+docker-compose.yml
+index.html
+package-lock.json
+vite.config.js
