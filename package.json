@@ -11,6 +11,7 @@
     "author": "ponponuumi",
     "license": "MIT",
     "dependencies": {
+        "sass": "^1.80.7",
         "vite": "^5.4.11"
     }
 }
