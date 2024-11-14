@@ -5,4 +5,4 @@ services:
             - ./dist:/var/www/html
             - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
         ports:
-            - 20010:80
+            - 20012:80
